@@ -24,7 +24,7 @@ jobs:
       continue-on-error: true
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::542339004362:role/aws-service-role/codeguru-reviewer.amazonaws.com/AWSServiceRoleForAmazonCodeGuruReviewer
+        role-to-assume: arn:aws:iam::542339004362:role/codegurus3
         aws-region: eu-north-1
 
     - name: Check out repository
