@@ -42,8 +42,7 @@ jobs:
       if: steps.assume-iam-role.outcome == 'success'
       continue-on-error: false
       with:
-        s3_bucket: codeguru-reviewer-build-artifacts-048169001733-us-west-2
-        build_path: ./build/libs
+        s3_bucket: codeguru-reviewer-testgithub
 
     - name: Upload SARIF file to workflow artifacts
       if: steps.assume-iam-role.outcome == 'success' && steps.analysis.outcome == 'success'
