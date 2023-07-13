@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Assume IAM role
       id: assume-iam-role
-      continue-on-error: true
+      continue-on-error: false
       uses: aws-actions/configure-aws-credentials@v1
       with:
         role-to-assume: arn:aws:iam::542339004362:role/codegurus3
